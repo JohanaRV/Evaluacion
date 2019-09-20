@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Evaluacion</string>
+    <string name="NuevoEstud">Nuevo Estudiante</string>
+    <string name="LstEstudiantes">Lista Estudiantes</string>
+    <string name="BDatos">Datos</string>
+    <string name="RegisEstudiante">Registro Estudiante</string>
+    <string name="Nomb">Nombre</string>
+    <string name="Cod">Código</string>
+    <string name="Mate">Materia</string>
+    <string name="PrimerP">Primer Parcial 30%</string>
+    <string name="SegundoP">Segundo Parcial 30%</string>
+    <string name="FinalP">Parcial Final 40%</string>
+    <string name="Guardar">Guardar</string>
+    <string name="Datos">Mis Datos</string>
+    <string name="Alumn">Johana Abigail Ramirez Vides</string>
+    <string name="Codigo">RV16-I04-001</string>
+    <string name="Correlativo">02</string>
+
+</resources>

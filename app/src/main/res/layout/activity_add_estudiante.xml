@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEstudiante"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/RegisEstudiante"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtNombre"
+        android:hint="@string/Nomb"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtCodigo"
+        android:hint="@string/Cod"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/Mate"
+        android:id="@+id/edtMateria"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/PrimerP"
+        android:id="@+id/edtParcial1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtParcial2"
+        android:hint="@string/SegundoP"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/FinalP"
+        android:id="@+id/edtParcial3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"></EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="onClickGuardar"
+        android:text="@string/Guardar"></Button>
+
+</LinearLayout>
