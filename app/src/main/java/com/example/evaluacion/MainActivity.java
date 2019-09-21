@@ -14,6 +14,7 @@ import Entidades.Estudiante;
 
 public class MainActivity extends AppCompatActivity {
     public static String TAG_MENSAJE = "Se realizó con exito";
+    public static final int ID = 1;
 
     public static List<Estudiante> lstEstudiante;
 
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickNuevoEstudiante(View v){
         Intent i = new Intent(this, AddEstudiante.class);
-        startActivity(i);
+        startActivityForResult(i, ID);
     }
     public void onClickListaEstudiantes(View v){
         if (lstEstudiante.isEmpty()){
@@ -42,5 +43,17 @@ public class MainActivity extends AppCompatActivity {
     public  void onClickDatos(View v){
         Intent i = new Intent(this, Datos.class);
         startActivity(i);
+    }
+    public void onActivityResult(int RequestCode, int ResultCode, Intent Datos){
+        super.onActivityResult(RequestCode, ResultCode, Datos);
+        switch (RequestCode){
+            case ID: {
+                if(ResultCode == RESULT_OK){
+                    String mensaje = Datos.getStringExtra(TAG_MENSAJE);
+                    Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show();
+                }
+                break;
+            }
+        }
     }
 }
